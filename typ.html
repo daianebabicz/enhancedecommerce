@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TM7G8GK');</script>
+  <!-- End Google Tag Manager -->
+  <script>
+    function onCheckout() {
+      dataLayer.push({
+        'event': 'checkout',
+        'ecommerce': {
+          'checkout': {
+            'actionField': { 'step': 2, 'option': 'Visa' },
+            'products': [{
+              'name': 'Passagem',
+              'id': '0001',
+              'e-mail': 'daibabicz@hotmail.com',
+              'voucher': 'sim',
+              'quantity': 1
+            }]
+          }
+        },
+        'eventCallback': function () {
+          document.location = 'checkout.html';
+        }
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TM7G8GK" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="jumbotron text-center" background-size=300px>
+    <h1 class="display-3">Obrigada pelo pedido!</h1>
+    <p class="lead">Por favor, cheque seu e-mail para mais informações.</p>
+    <hr>
+    <p>Daiane Babicz <br>
+      CPF: 111.827.****-** <br>
+      E-mail: daibabicz@hotmail.com <br>
+      Telefone: (41) 9 9882-6927 <br>
+      Identificação do pedido: #0001 <br>
+      Rua Acelino Grande, 615 <br>
+      Curitiba - PR <br>
+      Prazo de entrega: 5 dias úteis <br>
+      Forma de pagamento: VISA (Crédito)
+    </p>
+    <br>
+    <p class="lead">
+      <a class="btn btn-primary btn-sm" href="index.html" role="button">Continuar Navegando</a>
+    </p>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
